@@ -23,20 +23,14 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // Write a message to the database
         val database = Firebase.database
         val myRef = database.getReference("products")
 
-        // myRef.setValue("Hello, World!")
         val product  = Product("Mie Goreng", 5000)
         myRef.push().setValue(product)
 
-        // Read from the database
         myRef.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-//                val value = snapshot.getValue<String>()
                 for (element in snapshot.children){
                     val value = element.getValue<Product>()
                     Log.d("Firebase", "Value is: " + value?.name)
