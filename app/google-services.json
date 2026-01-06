@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "498462383558",
+    "project_id": "cobainfirebase-41e7b",
+    "storage_bucket": "cobainfirebase-41e7b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498462383558:android:235303813951e0a6a566c7",
+        "android_client_info": {
+          "package_name": "com.shalfa.cobainfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAGuo_MUEFyw9qphZCRXKGLfIoffoJxjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
